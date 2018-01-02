@@ -1,0 +1,10 @@
+var inp,outp:longint;
+begin
+  outp:=0;
+  repeat
+    read(inp);
+    if inp<>0 then
+      outp+=1;
+  until inp=0;
+  writeln(outp);
+end.
