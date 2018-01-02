@@ -1,0 +1,13 @@
+var inp,prev,outp:longint;
+begin
+  outp:=0;
+  read(inp);
+  prev:=inp;
+  repeat
+    read(inp);
+    if inp>prev then
+      outp+=1;
+    prev:=inp;
+  until inp=0;
+  writeln(outp);
+end.
