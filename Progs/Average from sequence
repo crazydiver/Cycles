@@ -1,0 +1,14 @@
+var inp,sum,count:longint;
+begin
+  sum:=0;
+  count:=0;
+  repeat
+    read(inp);
+    if inp<>0 then
+      begin
+        sum+=inp;
+        count+=1;
+      end;
+  until inp=0;
+  writeln(sum/count);
+end.
